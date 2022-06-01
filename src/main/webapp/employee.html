@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Registration</title>
+</head>
+<body>
+	<form action="employee" method="post">
+		Name<input type = "text" name = "empName">
+		<br><br>
+		
+		Phone<input type = "text" name = "empPhone">
+		<br><br>
+		
+		Address<textarea rows="5" cols="20" name = "empAddr"></textarea>
+		<br><br>
+		
+		<label>Gender</label>
+		<input type = "radio" id = "male" name = "empGender" value = "Male">
+		<label for = "male">Male</label>
+		<input type = "radio" id = "female" name = "empGender" value = "Female">
+		<label for = "female">Female</label>
+		<br><br>
+		
+		<label>Role</label>
+		<select name = "empRole">
+		<option>Admin</option>
+		<option>HR</option>
+		<option>Counsellor</option>
+		<option>Trainer</option>		
+		</select>
+		<br><br>
+		
+		<input type = "submit" value = "Submit">
+	</form>
+</body>
+</html>

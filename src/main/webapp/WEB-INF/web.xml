@@ -1,0 +1,48 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<servlet>
+		<servlet-name>Student</servlet-name>
+		<servlet-class>com.ty.passwordstore.servlet.StudentServlet</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Registration</servlet-name>
+		<servlet-class>com.ty.passwordstore.servlet.UserController</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>Employee Registration</servlet-name>
+		<servlet-class>com.ty.passwordstore.servlet.EmployeeController</servlet-class>	
+	</servlet>
+	
+	<servlet>
+		<servlet-name>User Login</servlet-name>
+		<servlet-class>com.ty.passwordstore.servlet.UserLoginController</servlet-class>	
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Student</servlet-name>
+		<url-pattern>/student</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>Registration</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>Employee Registration</servlet-name>
+		<url-pattern>/employee</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>User Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+</web-app>
